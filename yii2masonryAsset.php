@@ -15,8 +15,7 @@ use yii\web\AssetBundle;
 class yii2masonryAsset extends AssetBundle
 {
     public $sourcePath = '@philippfrenzel/yii2masonry/assets';
-    public $css = array(
-    );
+    public $css = array();
     public $js = array(
         'js/masonry.js'
     );
