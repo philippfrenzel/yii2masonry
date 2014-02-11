@@ -3,6 +3,7 @@ yii2masonry
 ===============
 
 Widget for masonry.js pinterest like layout container for Yii Framework 2
+Original sources for the jquery plugin: http://masonry.desandro.com/
 
 How to install?
 ---------------
@@ -25,10 +26,15 @@ Usage
 ```php
 <?php echo \philippfrenzel\yii2extblocksit\yii2masonry::widget([
     'clientOptions' => [
-		'numOfCol' => 5,
-        'offsetX' => 5,
-        'offsetY' => 5,
-        'blockElement' => 'site_index'
+        'columnWidth' => 5,
+        'itemSelector' => '.item'
     ]
 ]); ?>
 ```
+
+Size of columns can be defined within css
+```css
+  .item { width: 25%; }
+  .item.w2 { width: 50%; }
+```
+
