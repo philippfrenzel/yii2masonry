@@ -1,5 +1,5 @@
 {
-	"name": "philippfrenzel/yii2extblocksit",
+	"name": "philippfrenzel/yii2masonry",
 	"description": "Yii2 Blocksit Integration for Yii2",
 	"keywords": ["yii","blocksit"],
 	"homepage": "http://www.frenzel.net/",
@@ -14,13 +14,13 @@
 		}
 	],
 	"support": {
-		"source": "https://github.com/philippfrenzel/yii2extblocksit"
+		"source": "https://github.com/philippfrenzel/yii2masonry"
 	},
 	"require": {
 		"yiisoft/yii2": "*"
 	},
 	"autoload": {
-		"psr-0": { "philippfrenzel\\yii2extblocksit\\": "" }
+		"psr-0": { "philippfrenzel\\yii2masonry\\": "" }
 	},
-	"target-dir": "philippfrenzel/yii2extblocksit"
+	"target-dir": "philippfrenzel/yii2masonry"
 }
