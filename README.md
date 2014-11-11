@@ -22,9 +22,11 @@ You may also check the package information on [packagist](https://packagist.org/
 
 Usage
 -----
+On a page with a ListView, just add:
+
 
 ```php
-<?php echo \philippfrenzel\yii2extblocksit\yii2masonry::widget([
+<?php echo \philippfrenzel\yii2masonry\yii2masonry::widget([
     'clientOptions' => [
         'columnWidth' => 5,
         'itemSelector' => '.item'

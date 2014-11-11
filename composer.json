@@ -1,7 +1,7 @@
 {
 	"name": "philippfrenzel/yii2masonry",
 	"description": "Yii2 Blocksit Integration for Yii2",
-	"keywords": ["yii","blocksit"],
+	"keywords": ["yii","masonry"],
 	"homepage": "http://www.frenzel.net/",
 	"type": "yii2-extension",
 	"license": "MIT",
