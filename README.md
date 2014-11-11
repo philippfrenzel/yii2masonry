@@ -26,12 +26,29 @@ On a page with a ListView, just add:
 
 
 ```php
-<?php echo \philippfrenzel\yii2masonry\yii2masonry::widget([
+
+<?php \philippfrenzel\yii2masonry\yii2masonry::begin([
     'clientOptions' => [
-        'columnWidth' => 5,
+        'columnWidth' => 50,
         'itemSelector' => '.item'
     ]
 ]); ?>
+
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+        <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
+
+<?php \philippfrenzel\yii2masonry\yii2masonry::end(); ?>
+
 ```
 
 Size of columns can be defined within css
