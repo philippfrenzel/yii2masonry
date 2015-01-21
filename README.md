@@ -27,7 +27,7 @@ On a page with a ListView, just add:
 
 ```php
 
-<?php \philippfrenzel\yii2masonry\yii2masonry::begin([
+<?php \yii2masonry\yii2masonry::begin([
     'clientOptions' => [
         'columnWidth' => 50,
         'itemSelector' => '.item'
@@ -47,7 +47,7 @@ On a page with a ListView, just add:
         <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
         <div class="item"><h3>Test</h3><p>Und mehr Text</p></div>
 
-<?php \philippfrenzel\yii2masonry\yii2masonry::end(); ?>
+<?php \yii2masonry\yii2masonry::end(); ?>
 
 ```
 
