@@ -4,7 +4,7 @@
  * @author Philipp Frenzel <philipp@frenzel.net> 
  */
 
-namespace philippfrenzel\yii2masonry;
+namespace yii2masonry;
 
 use yii\web\AssetBundle;
 

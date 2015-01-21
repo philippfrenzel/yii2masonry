@@ -8,7 +8,7 @@
  *
  */
 
-namespace philippfrenzel\yii2masonry;
+namespace yii2masonry;
 
 use Yii;
 use yii\base\Model;
