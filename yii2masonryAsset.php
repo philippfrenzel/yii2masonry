@@ -14,11 +14,20 @@ use yii\web\AssetBundle;
  */
 class yii2masonryAsset extends AssetBundle
 {
-    public $sourcePath = '@philippfrenzel/yii2masonry/assets';
+    public $sourcePath = '@bower/masonry';
+
+    /**
+     * [$autoGenerate description]
+     * @var boolean
+     */
+    public $autoGenerate = true;
+    
     public $css = array();
+    
     public $js = array(
-        'js/masonry.js'
+        'masonry.js'
     );
+
     public $depends = array(
         'yii\web\JqueryAsset',
     );
