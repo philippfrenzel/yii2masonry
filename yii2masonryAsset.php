@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
 
 class yii2masonryAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/masonry';
+    public $sourcePath = '@bower/masonry/dist';
 
     /**
      * [$autoGenerate description]
@@ -22,7 +22,7 @@ class yii2masonryAsset extends AssetBundle
     public $css = array();
     
     public $js = array(
-        'masonry.js'
+        'masonry.pkgd.js'
     );
 
     public $depends = array(
