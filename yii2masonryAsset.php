@@ -1,17 +1,14 @@
 <?php
-/**
- * @link http://www.frenzel.net/
- * @author Philipp Frenzel <philipp@frenzel.net> 
- */
 
 namespace yii2masonry;
 
 use yii\web\AssetBundle;
 
 /**
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @since 2.0
+ * @link http://www.frenzel.net/
+ * @author Philipp Frenzel <philipp@frenzel.net> 
  */
+
 class yii2masonryAsset extends AssetBundle
 {
     public $sourcePath = '@bower/masonry';

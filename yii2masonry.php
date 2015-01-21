@@ -1,13 +1,5 @@
 <?php
 
- /**
- * this widget allows you to include a pinterest like layout container to your site
- * @copyright Frenzel GmbH - www.frenzel.net
- * @link http://www.frenzel.net
- * @author Philipp Frenzel <philipp@frenzel.net>
- *
- */
-
 namespace yii2masonry;
 
 use Yii;
@@ -16,6 +8,14 @@ use yii\web\View;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\base\Widget as Widget;
+
+ /**
+ * this widget allows you to include a pinterest like layout container to your site
+ * @copyright Frenzel GmbH - www.frenzel.net
+ * @link http://www.frenzel.net
+ * @author Philipp Frenzel <philipp@frenzel.net>
+ *
+ */
 
 class yii2masonry extends Widget
 {
