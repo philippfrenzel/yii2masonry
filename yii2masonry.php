@@ -36,6 +36,7 @@ class yii2masonry extends Widget
         'columnWidth'  => 200
     );
 
+
     /**
      * Initializes the widget.
      * If you override this method, make sure you call the parent implementation first.
@@ -47,7 +48,7 @@ class yii2masonry extends Widget
         if (!isset($this->options['id'])) {
             $this->options['id'] = $this->getId();
         }
-        echo Html::beginTag('div', ['id' => $this->options['id'],'class'=>'js-masonry']); //opens the container
+        echo Html::beginTag('div', $this->options); //opens the container
     }
 
     /**
