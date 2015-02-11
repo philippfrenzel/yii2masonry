@@ -23,7 +23,7 @@ class yii2masonryAsset extends AssetBundle
     
     public $js = array(
         'imagesloaded/imagesloaded.pkgd.min.js',
-        'masonry/distmasonry.pkgd.js'
+        'masonry/dist/masonry.pkgd.js'
     );
 
     public $depends = array(
