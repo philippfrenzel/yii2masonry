@@ -71,6 +71,7 @@ class yii2masonry extends Widget
         //get the displayed view and register the needed assets
         $view = $this->getView();
         yii2masonryAsset::register($view);
+        yii2imagesloadedAsset::register($view);
 
         $js = array();
         

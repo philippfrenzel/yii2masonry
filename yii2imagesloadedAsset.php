@@ -9,9 +9,9 @@ use yii\web\AssetBundle;
  * @author Philipp Frenzel <philipp@frenzel.net> 
  */
 
-class yii2masonryAsset extends AssetBundle
+class yii2imagesloadedAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/masonry/dist';
+    public $sourcePath = '@bower/imagesloaded';
 
     /**
      * [$autoGenerate description]
@@ -22,7 +22,7 @@ class yii2masonryAsset extends AssetBundle
     public $css = array();
     
     public $js = array(
-        'masonry.pkgd.min.js'
+        'imagesloaded.pkgd.min.js'
     );
 
     public $depends = array(

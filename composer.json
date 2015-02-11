@@ -19,7 +19,7 @@
 	"minimum-stability": "stable",
 	"require": {
 		"yiisoft/yii2": "*",
-		"bower-asset/masonry" : "*",
+		"bower-asset/masonry" : "^3.2",
 		"bower-asset/imagesloaded" : "*"
 	},
 	"autoload": {
