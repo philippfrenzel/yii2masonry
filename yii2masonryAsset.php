@@ -22,6 +22,7 @@ class yii2masonryAsset extends AssetBundle
     public $css = array();
     
     public $js = array(
+        'imagesloaded.pkgd.min.js',
         'masonry.pkgd.js'
     );
 
