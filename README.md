@@ -8,8 +8,7 @@ Original sources for the jquery plugin: http://masonry.desandro.com/
 [![Latest Stable Version](https://poser.pugx.org/philippfrenzel/yii2masonry/v/stable.svg)](https://packagist.org/packages/philippfrenzel/yii2masonry)
 [![Build Status](https://travis-ci.org/philippfrenzel/yii2masonry.svg?branch=master)](https://travis-ci.org/philippfrenzel/yii2masonry)
 [![Code Climate](https://codeclimate.com/github/philippfrenzel/yii2masonry.png)](https://codeclimate.com/github/philippfrenzel/yii2masonry)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/philippfrenzel/yii2masonry/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/philippfrenzel/yii2masonry/?branch=master)
-[![Version Eye](https://www.versioneye.com/php/kop:yii2-scroll-pager/badge.svg)](https://www.versioneye.com/php/kop:yii2-scroll-pager)
+[![Version Eye](https://www.versioneye.com/php/philippfrenzel:yii2masonry/badge.svg)](https://www.versioneye.com/php/philippfrenzel:yii2masonry)
 [![License](https://poser.pugx.org/philippfrenzel/yii2masonry/license.svg)](https://packagist.org/packages/kop/yii2-scroll-pager)
 
 How to install?
