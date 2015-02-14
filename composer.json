@@ -21,7 +21,8 @@
 		"php": ">=5.4.0",
 		"yiisoft/yii2": "*",
 		"bower-asset/masonry" : "^3.2",
-		"bower-asset/imagesloaded" : "*"
+		"bower-asset/imagesloaded" : "*",
+		"bower-asset/eventEmitter" : "^4.2"
 	},
 	"require-dev": {
 		"codeception/codeception": "*"
