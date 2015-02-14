@@ -12,4 +12,5 @@ install:
   - composer install
 
 script:
+  - php vendor/bin/codecept build
   - php vendor/bin/codecept run

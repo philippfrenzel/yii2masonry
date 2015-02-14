@@ -2,18 +2,9 @@
 
 namespace yii2masonry\tests\unit;
 
-use Codeception\TestCase\Test;
-use yii2masonry\yii2masonry;
+use \yii2masonry\yii2masonry;
 
-/**
- * This is ScrollPagerTest unit test.
- *
- * @see       yii2masonry\yii2masonry
- * @license   https://github.com/philippfrenzel/yii2masonry/blob/master/LICENSE.md MIT
- *
- * @author    Philipp Frenzel <philipp@frenzel.net>
- */
-class MasonryTest extends Test
+class MasonryTest extends \Codeception\TestCase\Test
 {
     /**
      * @var \UnitTester
@@ -40,4 +31,11 @@ class MasonryTest extends Test
     {
         $this->instance = null;
     }
+
+    // tests
+    public function testMe()
+    {
+
+    }
+
 }
