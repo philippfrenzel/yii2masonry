@@ -2,6 +2,8 @@
 
 namespace yii2masonry\tests\unit;
 
+use Yii;
+use \yii2masonry\yii2masonry;
 
 /**
  * This is MasonryTest unit test.
@@ -29,7 +31,7 @@ class MasonryTest extends \Codeception\TestCase\Test
      */
     protected function _before()
     {
-        $this->instance = new \yii2masonry\yii2masonry();
+        $this->instance = new yii2masonry();
     }
 
     /**

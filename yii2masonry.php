@@ -3,7 +3,6 @@
 namespace yii2masonry;
 
 use Yii;
-use yii\base\Model;
 use yii\web\View;
 use yii\helpers\Html;
 use yii\helpers\Json;
@@ -61,8 +60,7 @@ class yii2masonry extends Widget
     }
 
     /**
-    * Registers a specific dhtmlx widget and the related events
-    * @param string $name the name of the dhtmlx plugin
+    * Registers the widget and the related events
     */
     protected function registerPlugin()
     {
