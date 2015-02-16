@@ -16,7 +16,7 @@
 	"support": {
 		"source": "https://github.com/philippfrenzel/yii2masonry"
 	},
-	"minimum-stability": "stable",
+	"minimum-stability": "dev",
 	"require": {
 		"php": ">=5.4.0",
 		"yiisoft/yii2": "*",
