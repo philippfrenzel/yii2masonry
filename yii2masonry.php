@@ -42,12 +42,11 @@ class yii2masonry extends Widget
      */
     public function init()
     {
-        parent::init();
         //checks for the element id
         if (!isset($this->options['id'])) {
             $this->options['id'] = $this->getId();
         }
-        echo Html::beginTag('div', $this->options); //opens the container
+        parent::init();
     }
 
     /**
@@ -55,6 +54,7 @@ class yii2masonry extends Widget
      */
     public function run()
     {
+        echo Html::beginTag('div', $this->options); //opens the container
         echo Html::endTag('div'); //closes the container, opened on init
         $this->registerPlugin();
     }
