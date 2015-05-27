@@ -32,5 +32,14 @@
 		"psr-4": { 
 			"yii2masonry\\": "" 
 		}
-	}
+	},
+	"extra": {
+        "asset-repositories": [
+            {
+                "name": "bower-asset/eventemitter",
+                "type": "bower-vcs",
+                "url": "git://github.com/Wolfy87/EventEmitter.git"
+            }
+        ]
+    }
 }
