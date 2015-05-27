@@ -67,3 +67,61 @@ Size of columns can be defined within css
   .item.w2 { width: 50%; }
 ```
 
+Sample with infinity scroll:
+```php
+use yii\helpers\Html;
+use yii\widgets\ListView;
+use yii\web\JsExpression;
+use yii\widgets\Pjax;
+
+/* @var $this yii\web\View */
+/* @var $searchModel app\models\PolizzenserviceSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+
+$script = <<<SKRIPT
+$('#boxes').on('infinitescroll:afterRetrieve', function(){
+    msnryWgArbeiten.masonry('reloadItems');
+    mscontainerWgArbeiten.imagesLoaded(function(){ msnryWgArbeiten.masonry() });
+});
+
+$(document).on('submit', '#WgArbeitenSearchform', function(event) {
+  $.pjax.submit(event, '#WgArbeitenPjaxContainer')
+});
+SKRIPT;
+$this->registerJs($script);
+    
+?>
+
+<?php \yii2masonry\yii2masonry::begin([
+    'id' => 'WgArbeiten',
+    'clientOptions' => [
+        'columnWidth' => 20,
+        'itemSelector' => '.flowers'
+    ]
+]); ?>
+
+<div id="boxes">
+<?php $pjax = Pjax::begin(['id'=>'WgArbeitenPjaxContainer']); ?>
+<?php echo $this->render('@app/views/arbeiten/_search', ['model' => $searchModel]); ?>
+<?= \yii\widgets\ListView::widget([
+    'dataProvider' => $dataProvider,
+    'itemOptions' => ['class' => 'flowers'],
+    'itemView' => '@app/views/arbeiten/iviews/_view',
+    'summary' => false,
+    'layout' => '{items}<div style="visibility:hidden;">{pager}</div>'
+]); ?>
+
+<?php
+echo \darkcs\infinitescroll\InfiniteScrollPager::widget([
+    'itemSelector' => '.flowers',
+    'paginationSelector' => '.pagination',
+    'containerSelector' => '#WgArbeitenPjaxContainer',
+    'pjaxContainer' => $pjax->id,
+    'pagination' => $dataProvider->pagination,
+]);
+?>
+<?php Pjax::end(); ?>    
+</div>
+
+<?php \yii2masonry\yii2masonry::end(); ?>
+```
