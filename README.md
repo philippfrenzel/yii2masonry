@@ -75,8 +75,8 @@ On a page with a ListView, just add:
 
 Size of columns can be defined within css
 ```css
-  .item { width: 25%; } //important to define width of all item
-  .item.w2 { width: 50%; } //not important if you not use infinite scroll
+  .item { width: 25%; } 
+  .item.w2 { width: 50%; }
 ```
 
 If you have a sidebar resizeble by a button you need to reload the masonry container adding these following code:
