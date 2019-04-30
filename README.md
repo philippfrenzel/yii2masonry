@@ -93,7 +93,8 @@ $this->registerJs($script, View::POS_READY);
 ```
 My button have an ID name #menu_toggle
 
-Sample with INFINITE SCROLL:
+***INFINITE SCROLL***
+Sample:
 ```php
 use yii\helpers\Html;
 use yii\widgets\ListView;
