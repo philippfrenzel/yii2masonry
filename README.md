@@ -71,14 +71,30 @@ On a page with a ListView, just add:
 <?php \yii2masonry\yii2masonry::end(); ?>
 
 ```
+**CSS**
 
 Size of columns can be defined within css
 ```css
-  .item { width: 25%; }
+  .item { width: 25%; } 
   .item.w2 { width: 50%; }
 ```
 
-Sample with infinity scroll:
+If you have a sidebar resizeble by a button you need to reload the masonry container adding these following code:
+```php
+<?php
+$script = <<< JS
+    $('a#menu_toggle').on('click', function() {
+        $('.js-masonry').masonry();
+    });
+JS;
+$this->registerJs($script, View::POS_READY);
+?>
+  
+```
+My button have an ID name #menu_toggle
+
+***INFINITE SCROLL***
+Sample:
 ```php
 use yii\helpers\Html;
 use yii\widgets\ListView;
